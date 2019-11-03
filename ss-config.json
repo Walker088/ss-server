@@ -1,0 +1,10 @@
+{
+    "server":"0.0.0.0",
+    "local_port":1080,
+    "port_password":{
+        "80":"walker0881222",
+	"443":"walker0881222"
+    },
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
