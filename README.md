@@ -9,6 +9,9 @@ A shadowsocks server which wrapped by docker-compose.
 ## Usage
 
 ```bash
+# 1. remember to edit the config file after copy the template
+$ cp ss-config.example.json ./ss-config.json
+
 # Start the ss server
 $ docker-compose up -d
 
