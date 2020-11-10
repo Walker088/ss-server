@@ -1,16 +1,11 @@
-version: "3.7"
+version: "3.8"
 
 services:
   ss-server:
     container_name: ss
-    image: laucyun/shadowsocks-go:1.2.1
+    image: teddysun/go-shadowsocks2:latest
     ports:
-      - "443:443/tcp"
-      - "80:80/tcp"
-    volumes:
-      - ./ss-config.json:/opt/shadowsocks/ss-config.json
-    command: [
-        "-c",
-        "/opt/shadowsocks/ss-config.json"
-    ]
+      - "9000:9000/tcp"
+    env_file:
+      - .ss_server.env
     restart: always

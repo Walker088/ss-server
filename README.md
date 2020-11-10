@@ -10,7 +10,7 @@ A shadowsocks server which wrapped by docker-compose.
 
 ```bash
 # 1. remember to edit the config file after copy the template
-$ cp ss-config.example.json ./ss-config.json
+$ cp .ss_server.env.example .ss_server.env
 
 # Start the ss server
 $ docker-compose up -d
